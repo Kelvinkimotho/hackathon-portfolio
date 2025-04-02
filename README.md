@@ -21,21 +21,17 @@ Welcome to our **Hackathon 1 Portfolio Project**! This is a beginner-friendly we
 │   ├── script.js           # Core functionalities
 │   ├── form-validation.js  # Contact form validation
 │── /pages/                 # Additional pages
-│   ├── home.html           # Home page
 │   ├── about.html          # About Me page
 │   ├── projects.html       # Projects showcase
 │   ├── contact.html        # Contact page with form
-│── /components/            # Reusable UI sections
-│   ├── navbar.html         # Navigation bar
-│   ├── footer.html         # Footer
-│── index.html              # Main entry point
+│── index.html              # Main entry point/ homepage
 │── README.md               # Project documentation
 ```
 
 ## ⚡ Installation & Setup
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/USERNAME/hackathon-portfolio.git
+   git clone https://github.com/Kelvinkimotho/hackathon-portfolio.git
    ```
 2. **Navigate into the project**:
    ```sh
@@ -69,7 +65,8 @@ We will deploy the project on **GitHub Pages**:
 2. Under "Branch," select `main` and click **Save**
 3. The site will be live at:
    ```
-   https://USERNAME.github.io/hackathon-portfolio/
+   https://Kelvinkimotho.github.io/hackathon-portfolio/
+  
    ```
 
 
