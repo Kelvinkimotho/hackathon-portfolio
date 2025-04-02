@@ -6,16 +6,29 @@
         <title>Contact Page</title>
         <link rel="stylesheet" href="../css/contact.css" />
         <link rel="stylesheet" href="../css/responsive.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
     </head>
     <body>
-        <li>
-            <i class="fa-solid fa-house" style="color: #12da00"></i>
-            <a href="../index.html" class="active">Home</a>
-        </li>
+        
+         <!-- Navbar -->
+         <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Our Portfolio</a>
+                <ul class="nav-links">
+                    <i class="fa-solid fa-house" style="color: #74c0fc"></i>
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="./pages/about.html">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+            </div>
+        </nav>
+
         <!--container-->
         <div class="container">
             <marquee behavior="" direction="responsive">
@@ -43,5 +56,29 @@
                 <button class="submit" type="submit">Send</button>
             </div>
         </div>
+         <!-- Footer -->
+         <footer class="footer">
+            <div class="container">
+                <p>© 2024 Hackathon Group Portfolio. All Rights Reserved.</p>
+                <ul class="social-links">
+                    <li>
+                        <i class="bx bxl-twitter">
+                            <a href="#">Twitter</a>
+                        </i>
+                    </li>
+                    <li>
+                        <i class="bx bxl-linkedin">
+                            <a href="#">LinkedIn</a>
+                        </i>
+                    </li>
+                    <li>
+                        <i class="bx bxl-github">
+                            <a href="#">Github</a>
+                        </i>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
     </body>
 </html>
