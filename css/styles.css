@@ -175,3 +175,78 @@ body {
     color: white;
     text-decoration: none;
 }
+
+/* About Preview Section */
+.about-preview {
+    padding: 80px 0;
+    background-color: white;
+  }
+  
+  .about-preview .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-preview h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .about-preview h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    border-radius: 2px;
+  }
+  
+  .about-preview > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6c757d;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style-type: none; 
+    padding-left: 0;     
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 20px; 
+  }
+
+
+
+
