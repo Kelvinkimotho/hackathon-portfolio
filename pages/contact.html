@@ -11,7 +11,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
     </head>
-    <body>
+    <body onload="(alert("Welcome to the Contact Page")">
         <li>
             <i class="fa-solid fa-house" style="color: #12da00"></i>
             <a href="../index.html" class="active">Home</a>
@@ -25,14 +25,25 @@
 
             <div class="contact">
                 <label
-                    >Name: <input type="text" placeholder="Enter your name"
+                    >Name:
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                        class="daro"
                 /></label>
                 <label
                     >Telephone:
-                    <input type="tel" placeholder="Enter your Phonenumber"
+                    <input
+                        type="tel"
+                        placeholder="Enter your Phonenumber"
+                        class="daro"
                 /></label>
                 <label
-                    >Email: <input type="email" placeholder="Enter your email"
+                    >Email:
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        class="daro"
                 /></label>
                 <!-- <label>Message</label> -->
                 <textarea
@@ -43,5 +54,6 @@
                 <button class="submit" type="submit">Send</button>
             </div>
         </div>
+        <script src="../js/contact.js"></script>
     </body>
 </html>

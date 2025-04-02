@@ -75,6 +75,7 @@ label {
     color: #fff;
     border: 1px solid #07cc00;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.3s all;
 }
 .submit:hover {
