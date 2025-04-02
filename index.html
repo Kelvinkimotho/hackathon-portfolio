@@ -1,96 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon Group Portfolio | Home</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hackathon Group Portfolio | Home</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Our Portfolio</a>
+                <ul class="nav-links">
+                    <i class="fa-solid fa-house" style="color: #74c0fc"></i>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="./pages/about.html">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+            </div>
+        </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">Our Portfolio</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/about.html">About Us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-        </div>
-    </nav>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Our Hackathon Portfolio</h1>
+                <p>A showcase of our collaborative projects and skills.</p>
+                <a href="pages/projects.html" class="btn">View Projects</a>
+            </div>
+        </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to Our Hackathon Portfolio</h1>
-            <p>A showcase of our collaborative projects and skills.</p>
-            <a href="pages/projects.html" class="btn">View Projects</a>
-        </div>
-    </section>
+        <!-- About Preview -->
+        <section class="about-preview">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+                    We are a team of passionate developers working together on
+                    creative solutions.
+                </p>
+                <a href="pages/about.html" class="btn">Learn More</a>
+            </div>
+        </section>
 
-    <!-- About Preview -->
-    <section class="about-preview">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are a team of passionate developers working together on creative solutions.</p>
-            <a href="pages/about.html" class="btn">Learn More</a>
-        </div>
-    </section>
+        <!-- Projects Preview -->
+        <section class="projects-preview">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <p>Check out the exciting projects we’ve built together.</p>
+                <a href="pages/projects.html" class="btn">See More</a>
+            </div>
+        </section>
 
-    <!-- Projects Preview -->
-    <section class="projects-preview">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <p>Check out the exciting projects we’ve built together.</p>
-            <a href="pages/projects.html" class="btn">See More</a>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <div class="team-cards">
-                <div class="team-member">
-                    <img src="assets/kelvin.jpg" alt="Team Member 1">
-                    <h3>Kelvin Kimotho</h3>
-                    <p>Backend Developer</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/team2.jpg" alt="Team Member 2">
-                    <h3>Enock122</h3>
-                    <p>Frontend Developer</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/team3.jpg" alt="Team Member 3">
-                    <h3>Sam Wilson</h3>
-                    <p>UI/UX Designer</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/team4.jpg" alt="Team Member 4">
-                    <h3>Emily Johnson</h3>
-                    <p>Project Manager</p>
+        <!-- Team Section -->
+        <section class="team">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <div class="team-cards">
+                    <div class="team-member">
+                        <img
+                            src="assets/KelvinKimotho.jpg"
+                            alt="Team Member 1"
+                        />
+                        <h3>Kelvin Kimotho</h3>
+                        <p>Backend Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/team2.jpg" alt="Team Member 2" />
+                        <h3>Sam Wilson</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/team3.jpg" alt="Team Member 3" />
+                        <h3>Emily Johnson</h3>
+                        <p>Project Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/Maarifa.jpg" alt="Team Member 4" />
+                        <h3>David Mujabi</h3>
+                        <p>AI Engineer</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2024 Hackathon Group Portfolio. All Rights Reserved.</p>
-            <ul class="social-links">
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">GitHub</a></li>
-            </ul>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>© 2024 Hackathon Group Portfolio. All Rights Reserved.</p>
+                <ul class="social-links">
+                    <li>
+                        <i class="bx bxl-twitter">
+                            <a href="#">Twitter</a>
+                        </i>
+                    </li>
+                    <li>
+                        <i class="bx bxl-linkedin">
+                            <a href="#">LinkedIn</a>
+                        </i>
+                    </li>
+                    <li>
+                        <i class="bx bxl-github">
+                            <a href="#">Github</a>
+                        </i>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
-    <script src="js/script.js"></script>
-</body>
+        <script src="js/script.js"></script>
+    </body>
 </html>
