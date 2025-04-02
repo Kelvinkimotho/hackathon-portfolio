@@ -137,7 +137,6 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     color: #49e600;
-    /* animation: glow-border 1.5s infinite alternate; */
 }
 /* About Preview */
 .about-preview {
