@@ -175,3 +175,63 @@ body {
     color: white;
     text-decoration: none;
 }
+
+/* About Section */
+.about-section {
+    background: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+/* Team Section */
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 1rem;
+}
