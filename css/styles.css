@@ -226,6 +226,7 @@ body {
 
 /* About Section */
 .about-section {
+    margin-top: 80px;
     background: white;
     padding: 60px 0;
     text-align: center;
@@ -406,6 +407,7 @@ body {
 
 /* FAQ Section */
 .faq-section {
+    margin-top: 80px;
     background: white;
     padding: 60px 0;
     text-align: center;
