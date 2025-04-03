@@ -1,7 +1,13 @@
 /* Projects Page Specific Styles */
 .projects-main {
     padding: 80px 0;
-    margin-top: 60px;
+    background-color: #f8f9fa;
+}
+
+.projects-main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .projects-main h1 {
@@ -16,28 +22,6 @@
     color: #6c757d;
     margin-bottom: 3rem;
     font-size: 1.1rem;
-}
-
-.project-filters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 2rem;
-}
-
-.filter-btn {
-    padding: 8px 16px;
-    background: #e9ecef;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.filter-btn.active, .filter-btn:hover {
-    background: #4361ee;
-    color: white;
 }
 
 .projects-grid {
@@ -68,24 +52,18 @@
     justify-content: center;
 }
 
-.project-image.web {
+.web-img {
     background-color: #e3f2fd;
+    background-image: url('https://via.placeholder.com/300x200?text=Web+Project');
+    background-size: cover;
+    background-position: center;
 }
 
-.project-image.python {
+.python-img {
     background-color: #e8f5e9;
-}
-
-.project-image.web::before {
-    content: "Web Project";
-    font-size: 1.5rem;
-    color: #1565c0;
-}
-
-.project-image.python::before {
-    content: "Python Project";
-    font-size: 1.5rem;
-    color: #2e7d32;
+    background-image: url('https://via.placeholder.com/300x200?text=Python+Project');
+    background-size: cover;
+    background-position: center;
 }
 
 .github-btn {
@@ -95,11 +73,12 @@
     transform: translateX(-50%);
     background: #24292e;
     color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
+    z-index: 2;
 }
 
 .github-btn:hover {
@@ -136,15 +115,10 @@
     font-size: 0.8rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .project-filters {
-        flex-direction: column;
-        align-items: center;
     }
     
     .projects-main h1 {
@@ -154,4 +128,41 @@
     .subtitle {
         font-size: 1rem;
     }
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
 }
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+    }
+}
+
+
