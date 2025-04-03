@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact Page</title>
-        <link rel="stylesheet" href="../css/contact.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
         <link rel="stylesheet" href="../css/responsive.css" />
         <link
             rel="stylesheet"
@@ -12,48 +12,59 @@
         />
     </head>
     <body>
-        <li>
-            <i class="fa-solid fa-house" style="color: #12da00"></i>
-            <a href="../index.html" class="active">Home</a>
-        </li>
-        <!--container-->
-        <div class="container">
-            <marquee behavior="" direction="responsive">
-                Keep In Touch with us
-            </marquee>
-            <h2>Contact Us</h2>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="../index.html" class="logo glow">PORTFOLIO</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+            </div>
+        </nav>
 
-            <div class="contact">
-                <label
-                    >Name:
-                    <input
-                        type="text"
-                        placeholder="Enter your name"
-                        class="daro"
-                /></label>
-                <label
-                    >Telephone:
-                    <input
-                        type="tel"
-                        placeholder="Enter your Phonenumber"
-                        class="daro"
-                /></label>
-                <label
-                    >Email:
-                    <input
-                        type="email"
-                        placeholder="Enter your email"
-                        class="daro"
-                /></label>
-                <!-- <label>Message</label> -->
-                <textarea
-                    name="Message"
-                    id="tex"
-                    placeholder="Message us"
-                ></textarea>
-                <button class="submit" type="submit">Send</button>
+        <!-- Contact Section -->
+        <div class="container contact-container">
+            <h2>Contact Us</h2>
+            <p>Keep in touch with us</p>
+            <div class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" class="input-field" />
+                
+                <label for="phone">Telephone:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" class="input-field" />
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" class="input-field" />
+                
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Message us" class="input-field"></textarea>
+                
+                <button class="btn submit-btn" type="submit">Send</button>
             </div>
         </div>
+        
+        <!-- Footer -->
+        <footer class="custom-footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <p class="footer-text">© 2025 Hackathon Group Portfolio. All Rights Reserved.</p>
+                    <div class="footer-social">
+                        <ul class="social-links">
+                            <li><a href="#" class="social-icon twitter"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="#" class="social-icon github"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                            <li><a href="#" class="social-icon instagram"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script src="../js/contact.js"></script>
     </body>
 </html>
