@@ -563,7 +563,7 @@ body {
 /* Testimonials Section Styling */
 .testimonials-container {
     width: 80%;
-    margin-top: 80px;
+    margin-top: 8vh; /* Adjusts based on viewport height */
     padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
