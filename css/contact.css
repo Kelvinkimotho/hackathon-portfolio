@@ -1,4 +1,32 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #232423;
+}
+li {
+    margin: 6px;
+    border: 0px solid #333;
+    border-radius: 2px;
+    height: 35px;
+    width: 75px;
+    padding: 7px;
+    background: linear-gradient(45deg, #010504, #494b50);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+li a:hover {
+    color: #fff;
+    background-color: #07cc00;
+}
+li a {
+    text-decoration: none;
+    color: #07cc00;
+    font-weight: 600;
+}
 .container h2 {
     padding-left: 40%;
     font-size: 24px;
@@ -47,6 +75,7 @@ label {
     color: #fff;
     border: 1px solid #07cc00;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.3s all;
 }
 .submit:hover {
