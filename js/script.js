@@ -17,3 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
         teamContainer.scrollBy({ left: -250, behavior: "smooth" });
     });
 });
+
+// Auto-scroll Testimonials Section
+const testimonialsWrapper = document.querySelector(".testimonials-wrapper");
+
+function autoScroll() {
+    testimonialsWrapper.scrollBy({
+        left: 300,  // Scroll by 300px each time
+        behavior: 'smooth' // Smooth scroll effect
+    });
+}
+
+// Scroll every 3 seconds
+setInterval(autoScroll, 3000);
