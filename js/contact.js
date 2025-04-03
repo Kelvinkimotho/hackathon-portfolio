@@ -3,7 +3,7 @@ const user_input = document.querySelectorAll(".daro");
 const texa = document.querySelectorAll("#tex");
 my_btn.addEventListener("click", () => {
     const allFieldsFilled = [...user_input, ...texa].every(field => field.value.trim() !== '');
-    allFieldsFilled ? alert("successfull") : alert("Kindly fill all the fields!!");
+    allFieldsFilled ? alert("Sent successfully") : alert("Kindly fill all the fields!!");
     user_input.forEach(input=> {
         input.value = '';
     });
