@@ -1,85 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #232423;
-}
-li {
-    margin: 6px;
-    border: 0px solid #333;
-    border-radius: 2px;
-    height: 35px;
-    width: 75px;
-    padding: 7px;
-    background: linear-gradient(45deg, #010504, #494b50);
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-li a:hover {
-    color: #fff;
-    background-color: #07cc00;
-}
-li a {
-    text-decoration: none;
-    color: #07cc00;
-    font-weight: 600;
-}
-.container h2 {
-    padding-left: 40%;
-    font-size: 24px;
-}
+/* Contact Page Specific Styles */
 .container {
     width: 60%;
-    height: 80%;
-    top: 10%;
-    margin: 0 20%;
+    margin: 80px auto 20px;
     padding: 20px 40px;
-    position: absolute;
-    border: 1px solid grey;
-    overflow: hidden;
     background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-.contact {
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-label {
-    margin-bottom: 8px;
-}
-.contact input {
-    width: 100%;
-    height: 50px;
-    padding-left: 12px;
-    font-size: 16px;
+
+.container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
     margin-bottom: 20px;
-    border: 2px solid
-        rgba(rgb(255, 0, 234), rgb(42, 0, 54), rgb(0, 0, 126), 0.2);
 }
-.tex {
-    width: 100%;
-    padding: 8px;
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.submit {
-    margin-top: 15px;
-    height: 40px;
-    width: 100%;
+
+label {
+    font-weight: bold;
+    color: #444;
     display: block;
+}
+
+.contact input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.contact input:focus,
+textarea:focus {
+    border-color: #4361ee;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.submit {
+    margin-top: 10px;
+    padding: 12px;
     font-size: 18px;
-    font-weight: 500;
-    background-color: rgb(0, 199, 0);
-    color: #fff;
-    border: 1px solid #07cc00;
+    font-weight: bold;
+    background: #4361ee;
+    color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s all;
+    transition: all 0.3s ease;
 }
+
 .submit:hover {
+    background: #3742fa;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgb(66, 180, 0);
-    color: #ffffff;
+    box-shadow: 0 5px 10px rgba(67, 97, 238, 0.3);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
 }
