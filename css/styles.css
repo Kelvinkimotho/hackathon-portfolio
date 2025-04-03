@@ -340,9 +340,9 @@ body {
   }
   
   .about-text p {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     line-height: 1.8;
-    color: #495057;
+    color: #333;
     margin-bottom: 20px;
   }
 
