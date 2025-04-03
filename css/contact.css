@@ -73,6 +73,19 @@ textarea.input-field {
     box-shadow: 0 5px 10px rgba(67, 97, 238, 0.3);
 }
 
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
+
+.input-field.error-border {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .contact-container {
