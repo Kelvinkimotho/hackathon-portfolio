@@ -245,11 +245,32 @@ body {
 }
 
 /* Team Section */
-.team-cards {
+.team {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden; /* Prevents horizontal scrolling */
+    position: relative;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Team Carousel */
+.team-container {
     display: flex;
-    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     gap: 20px;
-    flex-wrap: wrap;
+    padding: 10px;
+    white-space: nowrap;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.team-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Webkit browsers */
 }
 
 .team-member {
@@ -258,7 +279,8 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 220px;
+    min-width: 220px;
+    flex-shrink: 0;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -283,6 +305,33 @@ body {
     color: #777;
     font-size: 1rem;
 }
+
+/* Navigation Buttons */
+.team-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.team-navigation button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    pointer-events: all;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.team-navigation button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
 
 /* About Preview Section */
 .about-preview {
