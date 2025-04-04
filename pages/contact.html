@@ -11,14 +11,18 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar">
             <div class="container">
-                <a href="../index.html" class="logo glow">PORTFOLIO</a>
+                <a href="contact.html" class="logo glow">Contact</a>
                 <ul class="nav-links">
-                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="project.html">Projects</a></li>
                     <li><a href="faq.html">FAQ</a></li>
@@ -30,7 +34,7 @@
         </nav>
 
         <!-- Contact Section -->
-        <div class="container contact-container">
+        <div class="container contact-container contact">
             <h2>Contact Us</h2>
             <p>Keep in touch with us</p>
             <div class="contact-form">
@@ -50,7 +54,10 @@
                 <textarea id="message" placeholder="Message us" class="input-field"></textarea>
                 <p class="error-message" id="message-error">Message cannot be empty.</p>
         
-                <button class="btn submit-btn" type="submit">Send</button>
+                <button class="btn submit-btn" type="submit">Send
+                    <i class='bx bx-send'></i>
+                </button>
+                <p>For Direct Calls Call: <i class='bx bx-phone'>""</i> <a href="tel:+25412345678">+254 12 345 678</a></p>
             </div>
         </div>
         
@@ -62,10 +69,10 @@
                     <p class="footer-text">© 2025 Hackathon Group Portfolio. All Rights Reserved.</p>
                     <div class="footer-social">
                         <ul class="social-links">
-                            <li><a href="#" class="social-icon twitter"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                            <li><a href="#" class="social-icon github"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                            <li><a href="#" class="social-icon instagram"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#" class="social-icon twitter"><i class="bx bxl-twitter" style="color: #0084ff;"></i>Twitter</a></li>
+                            <li><a href="#" class="social-icon linkedin"><i class="bx bxl-linkedin" style="color: blue;"></i>LinkedIn</a></li>
+                            <li><a href="#" class="social-icon github"><i class="bx bxl-github"></i> GitHub</a></li>                            
+                            <li><a href="#" class="social-icon instagram"><i class="bx bxl-instagram" style="background: linear-gradient(45deg, #cc0707, #8100b4, #e04700, transparent);"></i>Instagram</a></li>
                         </ul>
                     </div>
                 </div>

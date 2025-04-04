@@ -55,6 +55,7 @@ textarea.input-field {
 }
 
 .btn.submit-btn {
+    width: 78%;
     margin-top: 10px;
     padding: 12px 20px;
     font-size: 18px;
@@ -71,6 +72,27 @@ textarea.input-field {
     background: #3742fa;
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(67, 97, 238, 0.3);
+}
+.contact p{
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #232423;
+}
+.contact p a{
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #d0d4d3;
+    background-color: #dfdfdf;
+    padding: 4px;
+    color: #494b50;
+    transition: 0.3s ease-in-out;
+}
+.contact p a:hover{
+    padding: 4px;
+    border: 1px solid #4361ee;
+    background-color: #4361ee;
+    color: #ffe6e6;
 }
 
 /* Error Message Styling */
