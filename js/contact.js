@@ -44,3 +44,4 @@ myBtn.addEventListener("click", (event) => {
         alert("Please fill all fields correctly.");
     }
 });
+
