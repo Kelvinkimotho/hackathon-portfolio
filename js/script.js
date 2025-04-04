@@ -1,4 +1,3 @@
-
 // Toggle Menu for Mobile View
 function toggleMenu() {
     const navLinks = document.querySelector(".nav-links");
@@ -22,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Auto-scroll Testimonials Section
 const testimonialsWrapper = document.querySelector(".testimonials-wrapper");
 
-function autoScroll() {
+function autoScrollTestimonials() {
     testimonialsWrapper.scrollBy({
         left: 300,  // Scroll by 300px each time
         behavior: 'smooth' // Smooth scroll effect
@@ -30,4 +29,43 @@ function autoScroll() {
 }
 
 // Scroll every 3 seconds
-setInterval(autoScroll, 3000);
+setInterval(autoScrollTestimonials, 3000);
+
+// Auto-scroll Blog Section
+const blogWrapper = document.querySelector(".blog-cards-wrapper");
+
+function autoScrollBlog() {
+    blogWrapper.scrollBy({
+        left: 300,  // Scroll by 300px each time
+        behavior: 'smooth' // Smooth scroll effect
+    });
+}
+
+// Scroll every 3 seconds for blogs
+setInterval(autoScrollBlog, 3000);
+
+// Auto-scroll Careers Section
+const careersWrapper = document.querySelector(".careers-cards-wrapper");
+
+function autoScrollCareers() {
+    careersWrapper.scrollBy({
+        left: 300,  // Scroll by 300px each time
+        behavior: 'smooth' // Smooth scroll effect
+    });
+}
+
+// Scroll every 3 seconds for careers
+setInterval(autoScrollCareers, 3000);
+
+// Auto-scroll Partners Section
+const partnersWrapper = document.querySelector(".partners-cards-wrapper");
+
+function autoScrollPartners() {
+    partnersWrapper.scrollBy({
+        left: 300,  // Scroll by 300px each time
+        behavior: 'smooth' // Smooth scroll effect
+    });
+}
+
+// Scroll every 3 seconds for partners
+setInterval(autoScrollPartners, 3000);
