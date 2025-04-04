@@ -10,6 +10,7 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
+        
     </head>
     <body>
         <!-- Navbar -->
@@ -59,28 +60,79 @@
                         <img src="../assets/kelvin.jpg" alt="Kelvin Kimotho" />
                         <h3>Kelvin Kimotho</h3>
                         <p>Backend Developer</p>
+                        <a href="#" onclick="openModal('kimotho')">Skills</a>
+                    </div>
+                    <!--kimotho modal-->
+                    <div id="kimotho-modal" class="modal">
+                        <div class="modal-content">
+                            <h2>Skills</h2>
+                            <p>My skillset includes: C#, Vite, MongoDB, Javascript<br> and many more.!</p>
+                            <button class="close-btn" onclick="closeModal('kimotho')">Close</button>
+                        </div>
                     </div>
                     <div class="team-member">
                         <img src="../assets/swap.jpg" alt="kirui Enock" />
                         <h3>kirui Enock</h3>
-                        <p>Frontend Developer <br>& UI/UX Designer</p>
+                        <p>Frontend Developer</p>
+                        <a href="#" onclick="openModal('kirui')">Skills</a>
+                    </div>
+                    <!--Kirui modal-->
+                    <div id="kirui-modal" class="modal">
+                        <div class="modal-content">
+                            <h2>Skills</h2>
+                            <p>My skillset includes: Bootsrap, Tailwind css, Laravel, Typescript, <br>UI/UX Designer<br> am also skilled in canva and figma</p>
+                            <button class="close-btn" onclick="closeModal('kirui')">Close</button>
+                        </div>
                     </div>
                     <div class="team-member">
                         <img src="../assets/JanetAnne.jpeg" alt="Janet Anne" />
                         <h3>Janet Anne</h3>
                         <p>Project Manager</p>
+                        <a href="#" onclick="openModal('janet')">Skills</a>
                     </div>
+
+                    <!--Janet-->
+                    <div id="janet-modal" class="modal">
+                        <div class="modal-content">
+                            <h2>Skills</h2>
+                            <p>My skillset includes Python, C++, C, Rust <br>am also skilled in database handling </p>
+                            <button class="close-btn" onclick="closeModal('janet')">Close</button>
+                        </div>
+                    </div>
+
                     <div class="team-member">
                         <img src="../assets/Maarifa.jpg" alt="Mujabi Maarifa" />
                         <h3>Mujabi Maarifa</h3>
                         <p>AI Engineer</p>
+                        <a href="#" onclick="openModal('maarifa')">Skills</a>
+                    </div>
+                    <!--Maarifa modal-->
+                    <div id="maarifa-modal" class="modal">
+                        <div class="modal-content">
+                            <h2>Skills</h2>
+                            <p>My skillset includes Solidity, HTML, CSS, 
+                                <br> JavaScript, Laravel PHP, SQL
+                                <br> Training AI models and Generative AI and more!
+                            </p>
+                            <button class="close-btn" onclick="closeModal('maarifa')">Close</button>
+                        </div>
                     </div>
                     <div class="team-member">
                         <img src="../assets/Jack-profile.jpg" alt="Jackson Mugwe" />
                         <h3>Jackson Mugwe</h3>
                         <p>Machine Learning Engineer</p>
+                        <a href="#" onclick="openModal('jackson')">Skills</a>
+                    </div>  
+                    <!--Jackson--> 
+                    <div id="jackson-modal" class="modal">
+                        <div class="modal-content">
+                            <h2>Skills</h2>
+                            <p>My skillset: is based on Cloud computing, Azure Machine Learning
+                                 <br> and Training AI models
+                            </p>
+                            <button class="close-btn" onclick="closeModal('jackson')">Close</button>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -103,5 +155,20 @@
         </footer>
 
         <script src="../js/script.js"></script>
+        <script>
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+            
+            function openModal(section) {
+            document.getElementById(`${section}-modal`).style.display = 'flex';
+            }
+
+            
+            function closeModal(section) {
+            document.getElementById(`${section}-modal`).style.display = 'none';
+            }
+        </script>
     </body>
 </html>
