@@ -1,8 +1,19 @@
 /* Projects Page */
 .projects-main {
+<<<<<<< HEAD
     padding: 50px 20px;
     text-align: center;
     background-color: darkslategray;
+=======
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.projects-main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+>>>>>>> 2cf5a6cc1950fcee6a5faf540bec47fd8b45b160
 }
 
 h1 {
@@ -13,6 +24,7 @@ h1 {
 }
 
 .subtitle {
+<<<<<<< HEAD
     font-size: 1.2rem;
     color: white;
     margin-bottom: 30px;
@@ -20,6 +32,14 @@ h1 {
 }
 
 /* Projects Grid */
+=======
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+>>>>>>> 2cf5a6cc1950fcee6a5faf540bec47fd8b45b160
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -47,13 +67,29 @@ h1 {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 .project-thumbnail {
     width: 100%;
     height: auto;
+=======
+.web-img {
+    background-color: #e3f2fd;
+    background-image: url('https://via.placeholder.com/300x200?text=Web+Project');
+    background-size: cover;
+    background-position: center;
+}
+
+.python-img {
+    background-color: #e8f5e9;
+    background-image: url('https://via.placeholder.com/300x200?text=Python+Project');
+    background-size: cover;
+    background-position: center;
+>>>>>>> 2cf5a6cc1950fcee6a5faf540bec47fd8b45b160
 }
 
 /* GitHub Button */
 .github-btn {
+<<<<<<< HEAD
     display: block;
     text-align: center;
     background-color: blueviolet;
@@ -62,6 +98,20 @@ h1 {
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s;
+=======
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #24292e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 2;
+>>>>>>> 2cf5a6cc1950fcee6a5faf540bec47fd8b45b160
 }
 
 .github-btn:hover {
@@ -100,9 +150,62 @@ h3 {
     font-size: 0.9rem;
 }
 
+<<<<<<< HEAD
 /* Responsive */
+=======
+
+>>>>>>> 2cf5a6cc1950fcee6a5faf540bec47fd8b45b160
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+<<<<<<< HEAD
 }
+=======
+    
+    .projects-main h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+    }
+}
+
+
+>>>>>>> 2cf5a6cc1950fcee6a5faf540bec47fd8b45b160
